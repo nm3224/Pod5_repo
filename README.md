@@ -1,4 +1,4 @@
-# Pod Test Repo
+# Pod Repo
 
 # To do before each breakout session:
 
