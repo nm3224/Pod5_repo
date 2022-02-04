@@ -80,4 +80,4 @@ cd.. == hop out of directory to previous directory
 md == make directory
 type == printcd
 
-:)  :)  :)  :)  :)
+:)  :)  :)  :)  :) :)
