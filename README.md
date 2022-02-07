@@ -71,3 +71,13 @@ For example: `serena-temperature`
 - Create Pull Request
 
 Your T.A will review your pull request, make any comments, and merge into the pod repo!
+
+Quick CheatSheet:
+chdir == returns your current directory location
+dir === listing out what's in your working directory
+cd == change directory
+cd.. == hop out of directory to previous directory
+md == make directory
+type == printcd
+
+:)  :)  :)  :)  :) :)
