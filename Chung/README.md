@@ -6,7 +6,7 @@
 
 ## About Me
 
-Gratefully parttaking Justice Through Code's Spring 2022 cohort, I intend to apply this opportunity to expand my knowledge of code as well as professional connections so to prepare for what I am aspoiring to, a full-stack software engineer. I have undergone a 18-month career technical training with the Californai Prison Inductry Authority, sponsored by The Last Mile, in software development, to wit, frontend and backend fundamentals and JavaScript algorithm. I've continued to learn code after leaving prison and have completed Code the Dream's Frontend Fundamentals and React courses and am taking CTD's Practicum curriculum working in a dev team collaborating to develop a real-life, deployable web app. **[Head](https://github.com/Sanlung)** over to my GitHub account to check out the Practicum project in progress and check out my porfolio page **[here](https://sanlung.github.io/)** and my React final project **[here](https://remindme-abd87.web.app/Reading)**.
+Gratefully parttaking Justice Through Code's Spring 2022 cohort, I intend to leverage this opportunity to expand my knowledge of code as well as professional connections so to prepare for what I am aspoiring to, a full-stack software engineer. I have undergone a 18-month career technical training with the Californai Prison Inductry Authority, sponsored by The Last Mile, in software development, to wit, frontend and backend fundamentals and JavaScript algorithm. I've continued to learn code after leaving prison and have completed Code the Dream's Frontend Fundamentals and React courses and am taking CTD's Practicum curriculum working in a dev team collaborating to develop a real-life, deployable web app. **[Head](https://github.com/Sanlung)** over to my GitHub account to check out the Practicum project in progress and check out my porfolio page **[here](https://sanlung.github.io/)** and my React final project **[here](https://remindme-abd87.web.app/Reading)**.
 
 While behind bars, I self-taught Python by reading books and code with a pencil and paper. I was able to attain a level of understanding sufficient to write some basic command line games such as _tic tac toe_ and _hangman_ and code algorithm for quick, merge, bubble, insertion sorts. For example, here's the _tic tac toe_ game I wrote with pencil:
 
@@ -112,6 +112,24 @@ game.play()
 ```
 
 ## Journey with JTC
+
+### Goal
+
+To have gained demonstrable proficiency in the command of the Python langauge by the end of Justice Through Code training. Success is measured against what I have started off as illustrated in the About Me seciton.
+
+#### Week 1
+
+Curriculum:
+Setting up the develpment environment and gaining familiarity with the command line and Git and GitHub.
+Progess:
+Within knowledge and expeirience.
+
+#### Week 2
+
+Curriculum:
+Phyton syntax with `print` statement and comments, primitive data types and operators and conditional statements.
+Progress:
+Within knowledge and experience.
 
 ### Author
 
