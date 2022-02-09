@@ -6,28 +6,14 @@ Now that you have created your own repo and you'll now learn how to do git colla
 Keep up the great work. I am happy to be a part of your journey!
 
 ## To do before each breakout session:
+- `git status` to check if you are on the **main** branch.
+- If you are not on the main branch, run the command `git switch main`
 - `git pull` on the **main** branch.
-=======
-# Pod Repo
-
-# To do before each breakout session:
-
-`git pull` on the **main** branch.
->>>>>>> upstream/main
-- To check which branch you are on, use `git branch`
-- To change to main use, `git checkout main`.
-- Then you can do `git pull`.
-
-<<<<<<< HEAD
-When you pull, you will get all the new files and changes made by our pod. You will also be able to find the class challenges in the challenge folder.
 
 ### Make a copy of the challenge file:
 =======
 When you pull, you will get all the new files and changes made by our pod.
 You will also be able to find the class challenges in the challenge folder.
-
-# Make a copy of the challenge file
->>>>>>> upstream/main
 
 If there is a prewritten python file for the challenge, make a copy of it into your folder like this:
 
