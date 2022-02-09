@@ -16,7 +16,7 @@ You will also be able to find the class challenges in the challenge folder.
 
 If there is a prewritten python file for the challenge, make a copy of it into your folder like this:
 
-From **inside the folder where the challenge file is** (this may require cd-ing into the folder: ex. `cd week_2`:
+From **inside the folder where the challenge file is--this may require cd-ing into the folder: ex. `cd week_2`**:
 
 `cp [FILE NAME TO COPY] [DESTINATION OF COPY]`
 
