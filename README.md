@@ -16,7 +16,7 @@ You will also be able to find the class challenges in the challenge folder.
 
 If there is a prewritten python file for the challenge, make a copy of it into your folder like this:
 
-From **inside the folder where the challenge file is** (this may require cd-ing into the folder: ex. `cd week_2`:
+From **inside the folder where the challenge file is--this may require cd-ing into the folder: ex. `cd week_2`**:
 
 `cp [FILE NAME TO COPY] [DESTINATION OF COPY]`
 
@@ -25,13 +25,6 @@ From **inside the folder where the challenge file is** (this may require cd-ing 
 This should create a copy of the file you were working on inside your name folder.
 Double click your name folder and open the copy. **Continue working on the challenge in this file--not the one inside the week folder.**
 
-### To do after you complete your challenge:
-
-**Please do not push on main!**
-
-Create your own branch. A good branch name should describe be description. for our purposes, using your name and the challenge name is sufficient. For example: `serena-temperature`
-- `git checkout -b [YOUR_BRANCH_NAME]` --> `git checkout -b serena-temperature`
-
 # To do after you complete your challenge:
 
 **Please do not push on main!**
@@ -39,6 +32,8 @@ Create your own branch. A good branch name should describe be description. for o
 Create your own branch. A good branch name should describe be description.
 for our purposes, using your name and the challenge name is sufficient.
 For example: `serena-temperature`
+
+For this to work, **you need to have been working on the main branch. Run `git status` to check this.**
 
 - `git checkout -b [YOUR_BRANCH_NAME]` --> `git checkout -b serena-temperature`
 - `git status` -> check for new or modified files

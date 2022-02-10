@@ -1,6 +1,3 @@
-# import library
-from getpass import getpass
-
 # converting 100 degrees Fahrenheit to degrees in Celsius to one decimal point, and print result
 celsius_100 = round(((100 - 32) * 5 / 9), 1)
 print(celsius_100)
@@ -28,9 +25,10 @@ def fah_to_cels(fah):
     return
   cels = round((float(fah) - 32) * 5 / 9, 1)
   print(f'{fah} degrees Fahrenheit is {cels} degrees Celsius')
+  return cels
 
 # ask for input of temperature in Fahrenheit
-deg_fah = getpass("What degrees in Fahrenheit do you want to convert to Celsius? ")
+deg_fah = input("What degrees in Fahrenheit do you want to convert to Celsius? ")
 # convert with fah_to_cels() function
 fah_to_cels(deg_fah)
 
@@ -43,8 +41,9 @@ def cels_to_fah(cels):
     return
   fah = round((float(cels) * 9 / 5 + 32), 1)
   print(f'{cels} degrees Celsius is {fah} degrees Fahrenheit')
+  return fah
 
 # ask for input of remperature in Celsius
-deg_cels = getpass("What degrees in Celsius that you want to convert to Fahrenheit? ")
+deg_cels = input("What degrees in Celsius that you want to convert to Fahrenheit? ")
 # convert with cels_to_fah() function
 cels_to_fah(deg_cels)
