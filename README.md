@@ -25,13 +25,6 @@ From **inside the folder where the challenge file is--this may require cd-ing in
 This should create a copy of the file you were working on inside your name folder.
 Double click your name folder and open the copy. **Continue working on the challenge in this file--not the one inside the week folder.**
 
-### To do after you complete your challenge:
-
-**Please do not push on main!**
-
-Create your own branch. A good branch name should describe be description. for our purposes, using your name and the challenge name is sufficient. For example: `serena-temperature`
-- `git checkout -b [YOUR_BRANCH_NAME]` --> `git checkout -b serena-temperature`
-
 # To do after you complete your challenge:
 
 **Please do not push on main!**
