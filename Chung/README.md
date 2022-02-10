@@ -119,17 +119,13 @@ To have gained demonstrable proficiency in the command of the Python langauge by
 
 #### Week 1
 
-Curriculum:
-Setting up the develpment environment and gaining familiarity with the command line and Git and GitHub.
-Progess:
-Within knowledge and expeirience.
+- Curriculum: Setting up the develpment environment and gaining familiarity with the command line and Git and GitHub.
+- Progess: Within knowledge and expeirience.
 
 #### Week 2
 
-Curriculum:
-Phyton syntax with `print` statement and comments, primitive data types and operators and conditional statements.
-Progress:
-Within knowledge and experience.
+- Curriculum: Phyton syntax with `print` statement and comments, primitive data types and operators and conditional statements.
+- Progress: Within knowledge and experience.
 
 ### Author
 
