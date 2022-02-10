@@ -2,6 +2,9 @@
 
 # 1. 3 ways to print multiple items
 
+from telnetlib import STATUS
+
+
 ingredient_1 = 'milk'
 ingredient_2 = 'eggs'
 ingredient_3 = 'flour'
