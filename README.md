@@ -32,6 +32,7 @@ Double click your name folder and open the copy. **Continue working on the chall
 Create your own branch. A good branch name should describe be description.
 for our purposes, using your name and the challenge name is sufficient.
 For example: `serena-temperature`
+
 For this to work, **you need to have been working on the main branch. Run `git status` to check this.**
 
 - `git checkout -b [YOUR_BRANCH_NAME]` --> `git checkout -b serena-temperature`
