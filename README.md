@@ -9,27 +9,8 @@ Keep up the great work. I am happy to be a part of your journey!
 - If you are not on the main branch, run the command `git switch main`
 - `git pull` on the **main** branch.
 
-### Make a copy of the challenge file:
-
-When you pull, you will get all the new files and changes made by our pod.
-You will also be able to find the class challenges in the challenge folder.
-
-If there is a prewritten python file for the challenge, make a copy of it into your folder like this:
-
-From **inside the folder where the challenge file is--this may require cd-ing into the folder: ex. `cd week_2`**:
-
-`cp [FILE NAME TO COPY] [DESTINATION OF COPY]`
-
-`cp temperature.py ../serena_killion_folder`
-
-This should create a copy of the file you were working on inside your name folder.
-Double click your name folder and open the copy. **Continue working on the challenge in this file--not the one inside the week folder.**
-
-# To do after you complete your challenge:
-
-**Please do not push on main!**
-
-Create your own branch. A good branch name should describe be description.
+## To create your own branch:
+A good branch name should describe be description.
 for our purposes, using your name and the challenge name is sufficient.
 For example: `serena-temperature`
 
@@ -37,6 +18,30 @@ For this to work, **you need to have been working on the main branch. Run `git s
 
 - `git checkout -b [YOUR_BRANCH_NAME]` --> `git checkout -b serena-temperature`
 - `git status` -> check for new or modified files
+
+### Make a copy of the challenge file:
+
+When you pull, you will get all the new files and changes made by our pod.
+You will also be able to find the class challenges in the challenge folder.
+
+If there is a prewritten python file for the challenge, make a copy of it into your folder like this:
+From **inside the folder where the challenge file is--this may require cd-ing into the folder: ex. `cd week_2`**:
+
+`cp [FILE NAME TO COPY] [DESTINATION OF COPY]`
+
+`cp temperature.py ../../serena_killion_folder`
+
+**Think of the command `../../` like a staircase. You are inside the week 1 folder, and inside the 1_command_line folder. This is two steps down. You have to tell Git it needs to move two steps up back to the top of the staircase so it can find your name folder, which is on the "top" floor, and copy the file into there!** 
+
+This should create a copy of the file you were working on inside your name folder. Think of git directories like a 
+Double click your name folder and open the copy. **Continue working on the challenge in this file--not the one inside the week folder.**
+
+If you want to copy an entire folder, run: `cp -r 3_logic ../serena_killion_folder`
+
+**Please do not push on main! Make sure you are working in your own branch.**
+
+## To do after you complete your challenge:
+- `git status` to ensure **you are in your challenge-specific branch**
 - `git add [FILE NAME]` --> add file so git will track it
 - `git commit -m "YOUR_COMMIT_MESSAGE"` --> commit file to git
 - `git push` --> push it to the repo
