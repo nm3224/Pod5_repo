@@ -31,7 +31,7 @@ temperature = (85.1-32) * 5/9
 print(temperature)
 print(temperature > 30.2)
 print(f'{temperature} is not greater than 30.2 celsius')
-### Make sure everything is documented!
+### Make sure everything is documented!ls
 ###6. If you haven't already, go through your script and add a comment for questions 1-5 explaining what your code is doing.
 
 ### Awesome job! Now, add, commit, and push your completed script to your pod Github repo on your branch, then submit a pull request
