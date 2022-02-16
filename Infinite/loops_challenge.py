@@ -6,12 +6,17 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 # Let's start simple, and build up from there.
 # 1.1: Write a for loop that prints out each day in the `days` variable above.
 
-
+for day in days:
+    print(day)
 
 # 1.2: Now, instead of printing out the day, let's ask the user what their favorite thing
 # to do is on that day of the week. (Make sure to use an f-string so that the user knows which
 # day they're being asked about.)
-
+activities = []
+for day in days:
+    favorite = input(f'What is your favorite thinf to do on {day}?')
+    activities.append(favorite)
+    print(activities)
 
 
 # 1.3: We should keep track of the user's favorite things to do so that we can print them out all together.
@@ -21,7 +26,7 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 
 # 1.4: Now, back in your for loop, append each of the user's answers into your new list.
 # Print out the list after your loop to check if it got populated correctly.
-
+print(activities)
 
 
 # 1.5: After your first loop, let's create a new one. As an example, let's say the user's favorite thing to
@@ -32,7 +37,8 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 # Each time through this new loop, use the index number to index into each of your lists for the data
 # you need to print out.
 
-
+for i in range(len(days)):
+    print(f'your favortue thing to do on {days[i]} is {activities[i]}')
 
 
 # Take a look back at the code you just wrote. Look at how much it does!
