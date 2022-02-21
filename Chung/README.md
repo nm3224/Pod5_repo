@@ -127,6 +127,18 @@ To have gained demonstrable proficiency in the command of the Python langauge by
 - Curriculum: Phyton syntax with `print` statement and comments, primitive data types and operators and conditional statements.
 - Progress: Within knowledge and experience.
 
+#### Week 3
+
+- Curriculum: Lists, loops and dictionaries in Python.
+- Progress: Mostly within knowledge and experience. However, learned:
+  1. the string that takes the `.join()` method is termed a _separator_ in Python jargon
+  2. a Python variable is not confined to the scope in which it is delared and can be referenced outside of that scope. For example, the following will output the value assigned to the last item in the for loop.:
+     ```
+     for item in list:
+         do something
+     print(item)
+     ```
+
 ### Author
 
 [![Chung Kao](./images/Chung_button.svg)](https://github.com/Sanlung)

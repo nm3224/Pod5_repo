@@ -25,20 +25,21 @@ print()
 print("Challenge 3.2.2: Perform user-specific calculations")
 # TODO: You have all 3 user inputs stores in variables. Based on that, write conditional (if-elif-else) statements to find out the number of stocks of the company that can be purchased with the savings amount.
 def calc_shares(stk):
-    if stk == 'amzn':
-        num_shares = ["Amazon", amazon, round(int(client_savings) / amazon, 2)]
-    elif stk == 'appl':
-        num_shares = ["Apple", apple, round(int(client_savings) / apple, 2)]
-    elif stk == 'fb':
-        num_shares = ["Facebook", fb, round(int(client_savings) / fb, 2)]
-    elif stk == 'goog':
-        num_shares = ["Google", google, round(int(client_savings) / google, 2)]
-    elif stk == 'msft':
-        num_shares = ["Microsoft", msft, round(int(client_savings) / msft, 2)]
-    else:
-        stock = input ("You have not picked one of the available stocks. Type 'amzn' for Amazon, 'appl' for Apple, 'fb' for Facebook, 'goog' for Google and 'msft' for Microsoft. ")
-        num_shares = calc_shares(stock)
-    return num_shares
+  '''function to calculate shares of stock available for purchase based on user savings'''
+  if stk == 'amzn':
+    num_shares = ["Amazon", amazon, round(int(client_savings) / amazon, 2)]
+  elif stk == 'appl':
+    num_shares = ["Apple", apple, round(int(client_savings) / apple, 2)]
+  elif stk == 'fb':
+    num_shares = ["Facebook", fb, round(int(client_savings) / fb, 2)]
+  elif stk == 'goog':
+    num_shares = ["Google", google, round(int(client_savings) / google, 2)]
+  elif stk == 'msft':
+    num_shares = ["Microsoft", msft, round(int(client_savings) / msft, 2)]
+  else:
+    stock = input ("You have not picked one of the available stocks. Type 'amzn' for Amazon, 'appl' for Apple, 'fb' for Facebook, 'goog' for Google and 'msft' for Microsoft. ")
+    num_shares = calc_shares(stock)
+  return num_shares
 
 share_info = calc_shares(stock)
 

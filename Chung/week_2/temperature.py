@@ -18,14 +18,14 @@ print(round(30.2 * 9 / 5 + 32, 1))
 
 # function to convert Fahrenheit to Celsius
 def fah_to_cels(fah):
-  try:
-    float(fah)
-  except ValueError:
-    print("The value must be an integer or a floating point number")
-    return
-  cels = round((float(fah) - 32) * 5 / 9, 1)
-  print(f'{fah} degrees Fahrenheit is {cels} degrees Celsius')
-  return cels
+    try:
+        float(fah)
+    except ValueError:
+        print("The value must be an integer or a floating point number")
+        return
+    cels = round((float(fah) - 32) * 5 / 9, 1)
+    print(f'{fah} degrees Fahrenheit is {cels} degrees Celsius')
+    return cels
 
 # ask for input of temperature in Fahrenheit
 deg_fah = input("What degrees in Fahrenheit do you want to convert to Celsius? ")
@@ -34,14 +34,14 @@ fah_to_cels(deg_fah)
 
 # function to convert Celsius to Fahrenheit
 def cels_to_fah(cels):
-  try:
-    float(cels)
-  except ValueError:
-    print("The value must be an integer or a floating point number")
-    return
-  fah = round((float(cels) * 9 / 5 + 32), 1)
-  print(f'{cels} degrees Celsius is {fah} degrees Fahrenheit')
-  return fah
+    try:
+        float(cels)
+    except ValueError:
+        print("The value must be an integer or a floating point number")
+        return
+    fah = round((float(cels) * 9 / 5 + 32), 1)
+    print(f'{cels} degrees Celsius is {fah} degrees Fahrenheit')
+    return fah
 
 # ask for input of remperature in Celsius
 deg_cels = input("What degrees in Celsius that you want to convert to Fahrenheit? ")
