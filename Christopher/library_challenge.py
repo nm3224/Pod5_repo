@@ -164,8 +164,14 @@ print(count_books())
 # Parameters - author (string)
 # Return - author's books (list of strings)
 # Hint - You will need a for loop, if statement, .append() for this solution!
-
+def search_by_author(author):
+    books_by_author = []
+    # Loop through books_with_details list to find books by author and append to books_by_author list
+    for book in books_with_details:
+        if book['author'] == author:
+            books_by_author.append(book['title'])
+    return books_by_author
 
 # 2.4
 # Search for book titles by the author 'Timothy Snyder' using the search_by_author function
-
+print(search_by_author('Timothy Snyder'))
