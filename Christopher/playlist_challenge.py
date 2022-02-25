@@ -6,7 +6,7 @@
 # 1 Import all the functions in playlist_functions.py
 from playlist_functions import * 
 import numpy as np
-
+print(f'See line 7 of this script for the import statements: "from playlist_functions import *"')
 # This code initializes your playlist as an empty list. no songs in it yet!
 my_playlist = []
 
@@ -28,7 +28,7 @@ my_fave_song = {'artist': 'TISM', 'title': 'Greg, the stop sign!'}
 add_song(my_playlist, my_fave_song)
 
 # 4 Check that you've added the song by running the display_playlist() function again
-print('Question 4')
+print('Question 3 & 4')
 display_playlist(my_playlist)
 # 5 Add 2 more songs to my_playlist, then display it again using the display_playlist() function
 print('Question 5')
@@ -52,9 +52,19 @@ print("See line 8 of this script for the import statement: 'import numpy as np'"
 # You don't have to write any functions for this question
 print('Question 8')
 monthly_plays = [127030, 274920, 232453, 98278, 500301, 235462]
-
+# use mean() to calculate the average of monthly_plays
+average_plays = np.mean(monthly_plays)
+print(f'The average monthly plays for the hypothetical song is {average_plays}')
 
 # BONUS In playlist_functions.py, define a new function called play_track()
 # See playlist_functions.py for details on how to define this function
 # Then play a few tracks, and run display_playlist() again to make sure it works
 print('BONUS')
+print('Playlist before playing tracks:')
+display_playlist(my_playlist)
+play_track(my_playlist)
+play_track(my_playlist, 2)
+print("(Let's play that song again.)")
+play_track(my_playlist, 2)
+print('Playlist after playing tracks:')
+display_playlist(my_playlist)
