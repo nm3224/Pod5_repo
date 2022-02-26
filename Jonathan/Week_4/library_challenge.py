@@ -1,3 +1,6 @@
+from cgi import print_directory
+
+
 print('Question 1:')
 # You are working on a library management system, here are the list books at the library
 books = ['MY OWN WORDS', 'WHITE FRAGILITY', 'THE BODY KEEPS THE SCORE', 'SO YOU WANT TO TALK ABOUT RACE', 'STAMPED FROM THE BEGINNING', 'JUST MERCY', 'BORN A CRIME',
@@ -180,9 +183,10 @@ print()
 def search_by_author(author):
     author_list = []
     for book in books_with_details:
-        if book['title'] == author:
-            print(author_list.append('title'))
-    
+        if book['author'] == author:
+            author_list.append(book['title'])
+    print (author_list)
+
 search_by_author('Timothy Snyder')
 
 # Parameters - author (string)
