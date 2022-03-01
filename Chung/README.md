@@ -132,7 +132,11 @@ To have gained demonstrable proficiency in the command of the Python langauge by
 - Curriculum: Lists, loops and dictionaries in Python.
 - Progress: Mostly within knowledge and experience. However, I learned:
   1. the string that takes the `.join()` method is termed a _separator_ in Python jargon
+<<<<<<< Updated upstream
   2. scope in Python is delimited only by functions (_global_, _nonlocal_, _local_ scopes). Thus, a variable is not scoped to conditional statements (code blocks) in which it is delared and can be referenced outside of the statements, and the following will output the value assigned to the last `item` extracted by the `for` loop:
+=======
+  2. It appears scope in Python is delimited only by functions. Thus, a variable is not scoped to conditional statements (code blocks) in which it is delared and can be referenced outside of the statements, and the following will output the value assigned to the last `item` extracted by the `for` loop:
+>>>>>>> Stashed changes
      ```
      for item in list:
          do something
@@ -143,6 +147,7 @@ To have gained demonstrable proficiency in the command of the Python langauge by
 #### Week 4
 
 - Curriculum: functions and import modules.
+<<<<<<< Updated upstream
 - Progress: Mostly within knowledge and experience. New understandings includes:
 
   1.  The Python interpreter is indiscriminate as to the space between the function name and the parameer parentheses in the function definition.
@@ -166,6 +171,13 @@ To have gained demonstrable proficiency in the command of the Python langauge by
       submodule2()
       submodule3()
       ```
+=======
+- Progress: Mostly within knowledge and experience. New understanding includes:
+  1.  The Python interpreter is indiscriminate as to the space between the function name and the parameer parentheses in the function's definition.
+  2.  The Python interpreter is indiscriminate to the lack of space between the `return` keyword and the object being returned if the object is closed in parenteses. In that regard, Python appears not care about whether the `return` keyword is followed by parentheses wrapping the object that make up the return statement.
+  3.  The variables in a module/file, or the module as a whole, does not have to be expressly exported for import else where.
+  4.  Self studied lambda functions and higher order functions in Python.
+>>>>>>> Stashed changes
 
 ### Author
 
