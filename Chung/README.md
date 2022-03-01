@@ -167,6 +167,15 @@ To have gained demonstrable proficiency in the command of the Python langauge by
       submodule3()
       ```
 
+#### Project 1
+
+Check my Tip Calculator [here](git@github.com:Sanlung/tip-calculator-jtc2022.git).
+
+#### Week 5
+
+- Curriculum: Error handling and nested list and dictionary mixes.
+- Progress: Mostly within knowledge and experience.
+
 ### Author
 
 [![Chung Kao](./images/Chung_button.svg)](https://github.com/Sanlung)
