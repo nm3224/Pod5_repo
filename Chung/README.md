@@ -169,7 +169,7 @@ To have gained demonstrable proficiency in the command of the Python langauge by
 
 #### Project 1
 
-Check my Tip Calculator [here](git@github.com:Sanlung/tip-calculator-jtc2022.git).
+Check out my Tip Calculator [here](https://github.com/Sanlung/tip-calculator-jtc2022.git).
 
 #### Week 5
 

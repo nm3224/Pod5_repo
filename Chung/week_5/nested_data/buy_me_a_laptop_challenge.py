@@ -9,7 +9,7 @@ all_laptops = ["Apple MacBook Pro", "Asus Zenbook", "Dell XPS", "Lenovo IdeaPad"
 print("All laptops names:")
 print()
 print(*all_laptops, sep='\n')
-# or
+# # or
 # for laptop in all_laptops:
 #     print(laptop)
 
@@ -119,4 +119,4 @@ for laptop in laptops:
     for type in laptop['types']:
         all_possible_prices.extend(type['price'])
 print(f"All the possible prices for the laptops listed here are: {all_possible_prices}")
-#
+# #
