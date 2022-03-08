@@ -8,7 +8,8 @@ class Booklist():
 
 	def add(self, title, author):
 		"""Add a Book object with the given title and author to the book list"""
-		pass
+		book = Book(title, author)
+		self.books.append(book)
 
 	def count_books(self):
 		"""Return the number of books currently in the booklist"""

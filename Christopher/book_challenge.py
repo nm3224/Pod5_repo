@@ -47,6 +47,12 @@ My Grandmother's Hands - Resmaa Menakem
 Finally, print the books attribute of my_library to make sure your books have been added!
 '''
 print('\nPart 2\n')
+my_library.add('Just Mercy', 'Bryan Stevenson')
+my_library.add('The New Jim Crow', 'Michelle Alexander')
+my_library.add('The Truths We Hold', 'Kamala Harris')
+my_library.add("My Grandmothers Hand's", "Resmaa Menakem")
+for book in my_library.books:
+    print(f'{book.title} by {book.author}')
 
 
 
