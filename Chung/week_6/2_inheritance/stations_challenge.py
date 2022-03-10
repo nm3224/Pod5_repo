@@ -36,8 +36,8 @@ class SubwayStation(Station):
         self.lines = lines
 
     def show_info(self):
-        print(f'{self.station_name} station is located at {self.location}.',
-        f'The lines that stop at the station are {", ".join(self.lines)}.', sep='\n')
+        super().show_info()
+        print(f'The lines that stop at the station are {", ".join(self.lines)}.')
 
 print('Question 2: Make an example subway station')
 '''
@@ -45,11 +45,11 @@ Using your SubwayStation class, instantiate a subway station with the info below
 Then run the show_info() method to make sure you get the station_name, location, and lines printed out
 
 station_name: '14th Street'
-location: '14th street and 7th avenue'
+location: '14th Street and 7th Avenue'
 lines: ['1', '2', '3', 'L']
 '''
-sub1_station = SubwayStation('14th street', '14th street and 7th avenue', ['1', '2', '3', 'L'])
-sub1_station.show_info()
+sub_station1 = SubwayStation('14th Street', '14th Street and 7th Avenue', ['1', '2', '3', 'L'])
+sub_station1.show_info()
 
 print('Question 3: Making the BusStation Class')
 
@@ -68,7 +68,7 @@ class BusStation(Station):
     def __init__(self, station_name, location, routes):
         super().__init__(station_name, location)
         self.routes = routes
-        self.open = open
+        self.open = True
 
     def open_station(self):
         self.open = True
@@ -77,9 +77,8 @@ class BusStation(Station):
         self.open = False
 
     def show_info(self):
-        print(f'{self.station_name} station is located at {self.location}.',
-        f'The routes that the station go through are {", ".join(self.routes)}.',
-        f'The station is now {"open" if self.open else "closed"}.', sep='\n')
+        super().show_info()
+        print(f'The routes that stop at this station are {", ".join(self.routes)}.', f'The station is now {"open" if self.open else "closed"}.', sep='\n')
 
 print('Question 4: Make an example bus station')
 '''
@@ -89,11 +88,11 @@ Then, demonstrate that you can close and open the bus station
     i.e. that the show_info() method reflects correctly when the station is open versus closed
 
 station_name: 'NYC Megabus Stop'
-location: '34th street and 12th avenue'
+location: '34th Street and 12th Avenue'
 lines: ['Boston', 'DC', 'Philly']
 '''
 
-nyc_megabus_stop = BusStation('NYC Megabus Stop', '34th street and 12th avenue', ['Boston', 'DC', 'Philly'])
+nyc_megabus_stop = BusStation('NYC Megabus Stop', '34th Street and 12th Avenue', ['Boston', 'DC', 'Philly'])
 
 nyc_megabus_stop.show_info()
 nyc_megabus_stop.close_station()
