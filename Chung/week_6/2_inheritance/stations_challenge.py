@@ -10,7 +10,7 @@ Since subways and buses have different information, the methods and attributes w
 '''
 
 
-from turtle import Turtle
+# from turtle import Turtle
 
 
 print('Question 1: Making the SubwayStation Class')
@@ -37,7 +37,7 @@ class SubwayStation(Station):
 
     def show_info(self):
         super().show_info()
-        print(f'The lines that stop at the station are {", ".join(self.lines)}.')
+        print(f'The lines that stop at the station are {", ".join(self.lines[:-1] + ["and " + self.lines[-1]])}.')
 
 print('Question 2: Make an example subway station')
 '''
@@ -78,7 +78,8 @@ class BusStation(Station):
 
     def show_info(self):
         super().show_info()
-        print(f'The routes that stop at this station are {", ".join(self.routes)}.', f'The station is now {"open" if self.open else "closed"}.', sep='\n')
+        print(f'The routes that stop at this station are {", ".join(self.routes[:-1] + ["and " + self.routes[-1]])}.',
+        f'The station is now {"open" if self.open else "closed"}.', sep='\n')
 
 print('Question 4: Make an example bus station')
 '''
