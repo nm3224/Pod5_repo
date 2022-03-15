@@ -26,8 +26,12 @@ class Booklist():
 		    
 	def display_titles(self):
 		"""Print out all titles currently in the book list"""
-		pass
-
+		book_titles = [] # initialize an empty list to store the titles of the books
+		for book in self.books:
+				book_titles.append(book.title) # append the title of each book to the book_titles list
+		book_titles.sort() # sort the book_titles list
+		for book in book_titles:
+			print(book)
 	def is_empty(self):
 		"""Return True if the book list is empty, False if not"""
 		pass

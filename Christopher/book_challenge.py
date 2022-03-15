@@ -102,9 +102,12 @@ Then, print out the books attribute of nyt_bestsellers
 '''
 
 print('\nPart 5\n')
-
-
-
+nyt_bestsellers = Booklist()
+nyt_bestsellers.add('The 1619 Project', 'Nikole Hannah-Jones, Caitlin Roper, Ilena Silverman and Jake Silverstein')
+nyt_bestsellers.add('Braiding Sweetgrass', 'Robin Wall Kimmerer')
+print('These are the books in my short best sellers list:')
+for book in nyt_bestsellers.books:
+    print(f'{book.title} by {book.author}')
 '''
 BONUS Part #6:
 In book_list_class.py:
@@ -119,3 +122,8 @@ Once you have completed this method, test it out on both my_library and nyt_best
 '''
 
 print('\nBONUS Part 6\n')
+print('These are the books in my library in alphabetical order:')
+my_library.display_titles()
+print()
+print('These are the books in my short best sellers list in alphabetical order:')
+nyt_bestsellers.display_titles()
