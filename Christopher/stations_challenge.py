@@ -36,7 +36,7 @@ class SubwayStation(Station): # Syntax: class ChildClassName(ParentClassName):
     def show_info(self):
         lines_string = ', '.join(self.lines) # Joining the lines list with a comma and space
         #Overriding the parent class show_info method to display the subway lines, as well as the station_name and location
-        print(f'{self.station_name} station is located at {self.location} and stops on the following lines: {lines_string}.')
+        print(f'{self.station_name} station is located at {self.location} and services the following lines: {lines_string}.')
 
 
 print('Question 2: Make an example subway station')
