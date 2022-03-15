@@ -34,8 +34,9 @@ class SubwayStation(Station): # Syntax: class ChildClassName(ParentClassName):
         super().__init__(station_name, location) 
         self.lines = lines # Adding the lines attribute
     def show_info(self):
+        lines_string = ', '.join(self.lines) # Joining the lines list with a comma and space
         #Overriding the parent class show_info method to display the subway lines, as well as the station_name and location
-        print(f'{self.station_name} station is located at {self.location} and stops on the following lines: {self.lines}')
+        print(f'{self.station_name} station is located at {self.location} and stops on the following lines: {lines_string}.')
 
 
 print('Question 2: Make an example subway station')
@@ -62,7 +63,20 @@ BusStation should:
 -have additional methods called open_station() and close_station() to open and close the station
 -override the show_info() method from Station to display the bus routes and if the station is open, in addition to the station name and location
 '''
-
+class BusStation(Station):
+    def __init__(self, station_name, location, routes):
+        super().__init__(station_name, location)
+        self.routes = routes
+        self.open = True
+    def open_station(self):
+        # I think that this is self explanatory
+        self.open = True
+    def close_station(self):
+        self.open = False
+    def show_info(self):
+        routes_string = ', '.join(self.routes)
+        station_status = 'open' if self.open else 'closed' # This is a ternary operator
+        print(f'{self.station_name} station is located at {self.location} and has the following routes: {routes_string} and is currently {station_status}.')
 
 print('Question 4: Make an example bus station')
 '''
@@ -75,6 +89,14 @@ station_name: 'NYC Megabus Stop'
 location: '34th street and 12th avenue'
 lines: ['Boston', 'DC', 'Philly']
 '''
+bus_station_1 = BusStation('NYC Megabus Stop', '34th street and 12th avenue', ['Boston', 'DC', 'Philly'])
+bus_station_1.show_info()
+print('Closing the station...')
+bus_station_1.close_station()
+bus_station_1.show_info()
+print('Opening the station...')
+bus_station_1.open_station()
+bus_station_1.show_info()
 
 print('Question 5: Importing your classes')
 
