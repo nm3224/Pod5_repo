@@ -26,11 +26,15 @@ class Station:
     
     def show_info(self):
         print(f'{self.station_name} station is located at {self.location}')
-class SubwayStation(Station):
-    def __init__(self, station_name, location, lines):
-        super().__init__(station_name, location)
-        self.lines = lines
+        
+class SubwayStation(Station): # Syntax: class ChildClassName(ParentClassName):
+    def __init__(self, station_name, location, lines): # Overriding the parent class init method to add the lines attribute
+        # Calling the parent class __init__ method using super() in 
+        # order to not mess up the Method Resolution Order (or so I am told)
+        super().__init__(station_name, location) 
+        self.lines = lines # Adding the lines attribute
     def show_info(self):
+        #Overriding the parent class show_info method to display the subway lines, as well as the station_name and location
         print(f'{self.station_name} station is located at {self.location} and stops on the following lines: {self.lines}')
 
 
@@ -43,7 +47,8 @@ station_name: '14th street'
 location: '14th street and 7th avenue'
 lines: ['1', '2', '3', 'L']
 '''
-
+subway_station_1 = SubwayStation('14th street', '14th street and 7th avenue', ['1', '2', '3', 'L'])
+subway_station_1.show_info()
 
 print('Question 3: Making the BusStation Class')
 
