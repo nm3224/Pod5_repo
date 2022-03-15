@@ -64,20 +64,19 @@ BusStation should:
 -override the show_info() method from Station to display the bus routes and if the station is open, in addition to the station name and location
 '''
 class BusStation(Station):
-    def __init__(self, station_name, location, routes):
+    def __init__(self, station_name, location, routes, open=True):
         super().__init__(station_name, location)
         self.routes = routes
-        self.open = True
+        self.open = open
     
     def open_station(self):
-        if self.open == True:
-            print(f'The {self.station_name} at {self.location} is open!')
-        else:
-            print(f'Sorry. The {self.station_name} at {self.location} is close.')
+        self.open = True
+            
+    def close_station(self):
+        self.open = False
 
     def show_info(self):
-        print(f'{self.station_name} station is located at {self.location}, and goes to the following routes: {self.routes}.')
-        self.open_station
+        print(f'{self.station_name} station is located at {self.location}, and goes to the following routes: {self.routes}. The station is {"open" if self.open == True else "closed"}.')
 
 print()
 print('Question 4: Make an example bus station')
@@ -94,7 +93,6 @@ lines: ['Boston', 'DC', 'Philly']
 station_port_authority = BusStation('NYC Megabus Stop', '34th street and 12th avenue', ['Boston', 'DC', 'Philly'] )
 station_port_authority.show_info()
 
-
 print()
 print('Question 5: Importing your classes')
 
@@ -106,20 +104,3 @@ Make a new python script called "station_planning.py"
     -Instantiate 3 more stations of your choosing (at least 1 bus and 1 subway)
     -Feel free to make up names, locations, lines, and routes!
 '''
-
-from station_planning import Station, BusStation, SubwayStation
-station_grand_central = BusStation('Grand Central Station', '42nd Street and Park Avenue', ['New Haven', 'Bronx', 'Long Island'] )
-station_grand_central.show_info()
-print()
-
-station_court_square = SubwayStation('14th street', '14th street and 7th avenue', ['1', '2', '3', 'L'] )
-station_court_square.show_info()
-print()
-
-station_union_square = SubwayStation('Court Square', 'Jackson Avenue and 45th Avenue', ['7', 'G', 'E', 'M'] )
-station_union_square.show_info()
-print()
-
-station_metropolotion = SubwayStation('Metropolitan Station', 'Metropolitan Avenue and Union Avenue', ['L', 'G'] )
-station_metropolotion.show_info()
-print()

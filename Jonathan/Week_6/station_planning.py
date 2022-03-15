@@ -1,35 +1,4 @@
-class Station:
-    def __init__(self, station_name, location):
-        self.station_name = station_name
-        self.location = location
-    
-    def show_info(self):
-        print(f'{self.station_name} station is located at {self.location}')
-
-class BusStation(Station):
-    def __init__(self, station_name, location, routes):
-        super().__init__(station_name, location)
-        self.routes = routes
-        self.open = True
-    
-    def open_station(self):
-        if self.open == True:
-            print(f'The {self.station_name} at {self.location} is open!')
-        else:
-            print(f'Sorry. The {self.station_name} at {self.location} is close.')
-
-    def show_info(self):
-        print(f'{self.station_name} station is located at {self.location}, and goes to the following routes: {self.routes}.')
-        self.open_station
-
-class SubwayStation(Station):
-    def __init__(self, station_name, location, lines):
-        super().__init__(station_name, location)
-        self.lines = lines
-    
-    def show_info(self):
-        print(f'{self.station_name} station is located at {self.location}, and the line {self.lines} stop here.')
-
+from stations_challenge import *
 
 station_grand_central = BusStation('Grand Central Station', '42nd Street and Park Avenue', ['New Haven', 'Bronx', 'Long Island'] )
 
