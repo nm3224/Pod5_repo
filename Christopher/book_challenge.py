@@ -67,7 +67,7 @@ In this script:
 Once you have finished the method, count the books in my_library and print out the result
 '''
 print('\nPart 3\n')
-
+print(f'There are {my_library.count_books()} books in my library')
 
 
 '''
@@ -84,6 +84,10 @@ Then, print out the books attribute to make sure that book is gone
 '''
 
 print('\nPart 4\n')
+my_library.remove_title('Just Mercy') # remove the book 'Just Mercy' from the library
+print(f'These are the remaining books in my library:')
+for book in my_library.books:
+    print(f'{book.title} by {book.author}')
 
 
 '''
