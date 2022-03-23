@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Chung Kao" />
+    <meta
+      name="description"
+      content="Practice website for week 7 challenge of the Justice Through Code curriculum"
+    />
+    <link rel="icon" href="./image/favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Chung's Personal Website</title>
+  </head>
+  <body>
+    <header>
+      <h1>Chung Kao's Example Website</h1>
+      <img src="./image/darth.jpg" alt="Darth Vader" />
+    </header>
+    <main>
+      <section class="about">
+        <h2>About</h2>
+        <ol class="font-verdana">
+          <li id="font-red">Aspiring full-stack engineer</li>
+          <li id="font-magenta">Justice Through Code student</li>
+          <li id="font-green-italic">Code the Dream student</li>
+        </ol>
+        <p class="font-verdana font-light">
+          I am well organized, detail-oriented and self-motivated and adapts
+          quickly to change. Having transitioned from computer-illiterate to
+          code capable, I aspire to become a full-stack software engineer and am
+          committed to overcome any obstacles that might come in the way. In
+          addition to being natural in public speaking, I am trilingual⏤able to
+          work in English-, Chinese- and Japanese-speaking environments. I am
+          fluent in MacOS and Microsoft software and applications and am also
+          knowledgeable in web applications and the Internet, having experience
+          in collaborative projects that had real-life applications. I work to
+          excel and will not compromise quality merely to yield quantity or meet
+          time constraints. My motto is Do It and Do It Well.
+        </p>
+      </section>
+      <section class="sites">
+        <h2>My Links</h2>
+        <ul class="font-verdana">
+          <li>
+            <a href="https://github.com/sanlung/" target="_blank"
+              >My GitHub profile</a
+            >
+          </li>
+          <li>
+            <a href="https://sanlung.github.io/" target="_blank"
+              >My portfolio website</a
+            >
+          </li>
+          <li>
+            <a href="https://ctdreactegret.web.app/" target="_blank"
+              >My React project</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="contact">
+        <h2>How Do You Feel</h2>
+        <form>
+          <div class="info">
+            <div>
+              <label for="name">Name</label>
+              <input name="name" type="text" placeholder="Full name" />
+            </div>
+            <div>
+              <label for="phone">Telephone</label>
+              <input name="phone" type="tel" placeholder="Telephone number" />
+            </div>
+          </div>
+          <div class="feeling">
+            <div>
+              <input
+                type="radio"
+                name="feeling"
+                id="good"
+                value="good"
+                checked
+              />
+              <label for="good">Good</label>
+            </div>
+            <div>
+              <input type="radio" name="feeling" id="soso" value="soso" />
+              <label for="soso">So-so</label>
+            </div>
+            <div>
+              <input type="radio" name="feeling" id="bad" value="bad" />
+              <label for="bad">Bad</label>
+            </div>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
