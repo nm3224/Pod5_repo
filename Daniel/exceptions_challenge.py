@@ -14,8 +14,8 @@
 def validate_user_input():
     while True:
         try:
-            int(input("Please enter an integer: "))
-            return
+            num = int(input("Please enter an integer: "))
+            return num
         except ValueError:
             print("You did not enter a valid integer, please try again")
 
