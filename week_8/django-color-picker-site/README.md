@@ -149,7 +149,7 @@ Let's add some code to pull in our django form and send it to our html template
 from django.shortcuts import render
 from django.views import View
 
-from color_maker.forms import ColorPickerForm
+from paintapp.forms import ColorPickerForm
 
 
 # Create your views here.
@@ -165,7 +165,7 @@ class ColorPickerView(View):
             'blue': 255,
         }
 
-        return render(request, 'color_picker.html', context=context)
+        return render(request, 'paint.html', context=context)
 ```
 
 We're sending the form, as well as our default numbers for the color of our page. rgb(255, 255, 255) is white!
@@ -209,11 +209,11 @@ In your `paintapp` directory, create a file called `urls.py` as below:
 ```python
 from django.urls import path
 
-from paintapp.views import PaintView
+from paintapp.views import ColorPickerView
 
 urlpatterns = [
     # paintapp/
-    path('', PaintView.as_view(), name='paint'),
+    path('', ColorPickerView.as_view(), name='paint'),
 ]
 ```
 
@@ -336,7 +336,7 @@ class ColorPickerView(View):
             'blue': 255,
         }
 
-        return render(request, 'color_picker.html', context=context)
+        return render(request, 'paint.html', context=context)
 
 
     # This is the new content
@@ -355,7 +355,7 @@ class ColorPickerView(View):
             'blue': blue,
         }
 
-        return render(request, 'color_picker.html', context=context)
+        return render(request, 'paint.html', context=context)
 ```
 
 This time, we're going to collect the POST data (sent to Django in the `request` object as `request.POST`), and send it to our form to update the numbers that show up in it. We are also going to take the data in the POST object and send them into our context for our CSS to use, to actually update the color of our page.
