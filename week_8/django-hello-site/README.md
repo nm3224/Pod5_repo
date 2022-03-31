@@ -116,7 +116,7 @@ In your `helloapp` directory, create a file called `urls.py` as below:
 
 ```python
 from django.urls import path
-from sayhello.views import HelloWorldView
+from helloapp.views import HelloWorldView
 
 urlpatterns = [
     # helloapp/
@@ -196,7 +196,7 @@ Add a new a URL that takes a string parameter called `name`. The goal is to have
 ```python
 from django.urls import path
 
-from sayhello.views import HelloWorldView, HelloView
+from helloapp.views import HelloWorldView, HelloView
 
 urlpatterns = [
     # helloapp/
