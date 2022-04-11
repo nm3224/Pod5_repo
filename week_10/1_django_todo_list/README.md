@@ -29,7 +29,7 @@ In this challenge, you'll build on the Django to-do list app demonstrated in tod
 
 Now we'll make a way for users to keep a list of notes. This will be structured quite similarly to the todo-list part of the page, and will be practice in creating a whole new model 
 
-6. Create a new model called `Note` similar to `Task`, that has 1 attribute, `note_text`. 
+6. Create a new model called `Note` similar to `Task`, that has 1 attribute, `text`. 
 
 7. Create a notes page at `http://127.0.0.1:8000/todo/notes` that looks similar to below. It should have the following features
     * Display notes added by the users from oldest (top) to newest (bottom) in an ordered list
