@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+
+.verdana {
+    font-family: Verdana;
+}
+
+.blue {
+    color: blue;
+}
+
+#li1 {
+    color: red;
+}
+
+#li2 {
+    color: orange;
+}
+
+#li3 {
+    color: green;
+    font-style: italic;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

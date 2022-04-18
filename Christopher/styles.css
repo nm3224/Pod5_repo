@@ -1,0 +1,33 @@
+/* Center h1 headings  */
+h1 {
+  text-align: center;
+}
+/* Using a class, make all paragraph text AND your list of facts text use the font 'Verdana' */
+.verdana-font {
+  font-family: Verdana;
+}
+/* Make all paragraph text any color other than black */
+.red {
+    color: red;
+}
+#fact-1 {
+    color: blue;
+}
+#fact-2 {
+    color: purple;
+}
+/* Make one fact use italics */
+#fact-3 {
+    color: green;
+    font-style: italic;
+}
+/* Make all form label text bold */
+form label {
+    font-weight: bold;
+}
+/* Align the images at the center of the page */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
