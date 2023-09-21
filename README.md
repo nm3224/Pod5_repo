@@ -1,6 +1,6 @@
 # Pod5_repo
 # WELCOME JUSTICE THROUGH CODE!
-# This repo was for my JTC students!
+## This repo was for my JTC students!
 Pod Test Repo
 
 Now that you have created your own repo and you'll now learn how to do git collaborations. Inside this repo, each of you will see a directory in your name. This is where you will now submit your completed challenges. Below is the set of instructions on how to do this and best practices.
